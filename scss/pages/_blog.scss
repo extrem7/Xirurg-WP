@@ -1,0 +1,44 @@
+.filter {
+  form {
+    max-width: 680px;
+    width: 100%;
+    .control-form {
+      margin-right: 25px;
+    }
+  }
+}
+.blog-item {
+  margin-bottom: 30px;
+  .blog-image {
+    height: 370px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .blog-title {
+    font-size: 30px;
+  }
+  .blog-description {
+    margin: 20px 0;
+    font-weight: 300;
+  }
+}
+@media (max-width: 768px) {
+  .blog-item {
+    .blog-title {
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .blog-item {
+    .blog-title {
+      margin-top: 25px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .blog-item .blog-image {
+    height: 250px;
+  }
+}

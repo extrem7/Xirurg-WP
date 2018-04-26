@@ -1,0 +1,118 @@
+.control-form {
+  height: 40px;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #eff7fa;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  padding: .375rem 1rem .375rem 0;
+  font-weight: 300;
+  color: #f0f8fb;
+  border-radius: 0;
+  transition: border-color .2s ease-in-out;
+  @include placeholder {
+      font-weight: 400;
+      color: #f0f8fb;
+      transition: color .4s ease-in-out;
+  }
+  &.dark {
+    color: #1a2940;
+    border-bottom: solid 1px $blue;
+    @include placeholder {
+      color: $blue;
+    }
+  }
+  &:focus {
+    border-bottom: 1px solid $purpule;
+    @include placeholder {
+      color: #99a4a8;
+    }
+  }
+}
+.dropdown-menu {
+  min-width: auto;
+  background-color: $dark-blue;
+  padding: 10px 20px;
+  border-radius: .35rem;
+  border: 0;
+  li + li {
+    margin-top: 5px;
+  }
+  &.right {
+    left: auto!important;
+    right: 0!important;
+  }
+}
+.dropdown-toggle::after {
+  border-top: .25em solid;
+  border-right: .25em solid transparent;
+  border-bottom: 0;
+  border-left: .25em solid transparent;
+}
+select.control-form {
+  background: transparent url('../img/icon/arrow-down1.png') no-repeat right center;
+   background-size: 14px 8px;
+  font-weight: 400;
+  option {
+    font-weight: 400;
+    color: $blue;
+  }
+  &.dark {
+    background: transparent url('../img/icon/arrow-down-dark.png') no-repeat right center;
+  }
+}
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .66rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 32px;
+  transition: color .4s ease-in-out, background-color .4s ease-in-out, border-color .4s ease-in-out, box-shadow .4s ease-in-out !important;
+  text-transform: uppercase;
+}
+.btn-ciant {
+  background-color: $turquoise;
+  font-weight: 500;
+  color: #fff;
+  font-size: 15px;
+  min-width: 208px;
+  &:hover,
+  &:focus {
+    background-color: darken($turquoise, 10%);
+    color: #fff;
+  }
+}
+.btn-pink {
+  background-color: $purpule;
+  color: $blue-light;
+  font-weight: 500;
+  min-width: 208px;
+  font-size: 15px;
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: #fff;
+  }
+  &.fon {
+    &:hover,
+    &:focus {
+      background-color: #e5203d;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 992px) {
+
+}

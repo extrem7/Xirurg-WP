@@ -1,0 +1,26 @@
+.news {
+  margin-bottom: 30px;
+  .news-image {
+    height: 130px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .news-body {
+    .news-date {
+      font-size: 13px;
+      color: #a8b9c0;
+      margin: 10px 0 5px 0;
+    }
+    .news-title {
+      font-size: 20px;
+      color: $blue;
+      line-height: 1.2;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .news .news-body .news-title {
+    font-size: 16px;
+  }
+}

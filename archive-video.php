@@ -1,0 +1,1 @@
+<? locate_template('archive-gallery.php', true);

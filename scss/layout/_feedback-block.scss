@@ -1,0 +1,22 @@
+.personal-feedback {
+  margin-top: 80px;
+}
+.personal-feedback .container {
+  position: relative;
+}
+.personal-form {
+  max-width: 445px;
+  width: 100%;
+  margin-left: 25px;
+}
+@media (max-width: 767px) {
+  .personal-form {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    .title-general {
+      &.large-size {
+        font-size: 24px;
+      }
+    }
+  }
+}

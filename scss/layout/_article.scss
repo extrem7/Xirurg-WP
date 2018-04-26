@@ -1,0 +1,28 @@
+.article {
+  font-weight: 300;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .alignleft {
+    display: block;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 5px;
+  }
+  .alignright {
+
+  }
+}
+@media (max-width: 768px) {
+  .article {
+    img {
+      margin: 10px auto;
+    }
+    .alignleft {
+      padding: 0;
+      float: none;
+    }
+  }
+}
